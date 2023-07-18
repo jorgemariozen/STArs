@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Countdown</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  // Get the XML data
+  var xml = $.get("countdown.xml", function(data) {
+    // Parse the XML data
+    var countdowns = $(data).find("countdown");
+    // Create a countdown element for each countdown
+    $.each(countdowns, function(index, countdown) {
+      var countdownElement = $("<div></div>");
+      countdownElement.attr("id", "countdown-" + index);
+      countdownElement.text(countdown.seconds);
+      countdownElement.css("color", countdown.color);
+      // Update the countdown every second
+      setInterval(function() {
+        countdown.seconds -= 1;
+        // Update the countdown text
+        countdownElement.text(countdown.seconds);
+      }, 1000);
+      // Append the countdown element to the DOM
+      $("body").append(countdownElement);
+    });
+  });
+});
+</script>
+</head>
+<body>
+</body>
+</html>
