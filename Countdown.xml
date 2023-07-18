@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<userDataVersion>78</userDataVersion>
+<sessions>
+  <session>
+    <newSession>false</newSession>
+    <sessionName>1min x 1min</sessionName>
+    <sessionDescription></sessionDescription>
+    <timestamp>1689696240267</timestamp>
+    <segmentContainer>
+      <setGroup>
+        <setGroupDescription></setGroupDescription>
+        <numberOfReps>5</numberOfReps>
+        <segmentContainer>
+          <countdown>
+            <countdownDescription>Respira 1 min</countdownDescription>
+            <seconds>50</seconds>
+            <randomSpread>0</randomSpread>
+            <preAlarmSeconds>49</preAlarmSeconds>
+            <isWork>false</isWork>
+            <isPauseAfter>false</isPauseAfter>
+            <isForwardCount>false</isForwardCount>
+            <isSkipLast>false</isSkipLast>
+            <color>-16080886</color>
+          </countdown>
+          <countdown>
+            <countdownDescription>Último respiro </countdownDescription>
+            <seconds>10</seconds>
+            <randomSpread>0</randomSpread>
+            <preAlarmSeconds>9</preAlarmSeconds>
+            <isWork>false</isWork>
+            <isPauseAfter>false</isPauseAfter>
+            <isForwardCount>false</isForwardCount>
+            <isSkipLast>false</isSkipLast>
+            <color>-30969</color>
+          </countdown>
+          <countdown>
+            <countdownDescription>Aguanta 1 min</countdownDescription>
+            <seconds>60</seconds>
+            <randomSpread>0</randomSpread>
+            <preAlarmSeconds>59</preAlarmSeconds>
+            <isWork>true</isWork>
+            <isPauseAfter>false</isPauseAfter>
+            <isForwardCount>false</isForwardCount>
+            <isSkipLast>false</isSkipLast>
+            <color>-13202188</color>
+          </countdown>
+        </segmentContainer>
+      </setGroup>
+    </segmentContainer>
+  </session>
+</sessions>
